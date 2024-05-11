@@ -46,3 +46,6 @@ After choosing notes that will be responsible for mouse movement and actions, re
 
 This script is intended for educational purposes only. I am not responsible for any damage caused by this script. Use it at your own risk. Also, I am aware that this script is not perfect and it can be improved in many ways. If you have any suggestions or improvements, feel free to open an issue or a pull request. This script will not work in the games like Fortnite, PUBG, etc. because of the anti-cheat software that is blocking the usage of such scripts. This script is intended for educational purposes only and should not be used for cheating in games or any other malicious activities. (But you can use it to play Muck with your MIDI device!)
 
+# Making of
+This script was initially written from scratch on stream, you can watch it [here](https://www.twitch.tv/videos/2143092512)
+
