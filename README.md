@@ -20,9 +20,9 @@ I've also used `argparse` to read cli arguments.
 
 - python version `>=3.10`
 - install required python libraries:
-- - `pip3 install mido`
-- - `pip3 install ctype`
-- - `pip3 install argparse`
+```bash
+$ pip install mido ctype argparse
+```
 
 # Usage
 
