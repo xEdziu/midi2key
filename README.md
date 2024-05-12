@@ -1,5 +1,7 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/xEdziu/midi2key/total)
 ![GitHub Tag](https://img.shields.io/github/v/tag/xEdziu/midi2key)
+![Workflow](https://github.com/xEdziu/midi2key/actions/workflows/pylint.yml/badge.svg)
+![pylint]()
 
 
 # MIDI to PC Keystrokes script
