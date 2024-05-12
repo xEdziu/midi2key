@@ -14,7 +14,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ["3.10"]
+        python-version: ["3.11"]
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
     - uses: actions/checkout@v4
@@ -36,5 +36,5 @@ jobs:
     - uses: Silleellie/pylint-github-action@v2
       with:
         lint-path: midi2key.py
-        python-version: 3.10
+        python-version: 3.11
         badge-text: PyLint Score
