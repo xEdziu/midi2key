@@ -31,9 +31,17 @@ jobs:
         pip install argparse
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
-    - name: Upload pylint report
+        if [[ "${{ runner.os }}" == "Windows" ]]; then
+          pylint $(git ls-files '*.py') | Tee-Object -FilePath pylint_output.txt
+        else
+            pylint $(git ls-files '*.py') | tee pylint_output.txt
+        fi
+        if [[ "${{ runner.os }}" == "Linux" ]]; then
+          grep 'rated at' pylint_output.txt | awk '{print $7}' > pylint_score.txt
+        fi
+    - name: Upload pylint score
+      if: runner.os == 'Linux'
       uses: actions/upload-artifact@v2
       with:
-        name: pylint-report
-        path: pylint-report.txt
+        name: pylint-score
+        path: pylint_score.txt
