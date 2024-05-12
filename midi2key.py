@@ -186,11 +186,13 @@ def mouse_middle_click():
     print("Mouse middle click")
 def modify_sensitivity(value):
     '''Modify the mouse sensitivity.'''
+    # pylint: disable=global-statement
     global SENSITIVITY
     SENSITIVITY = max(1, SENSITIVITY + value)
     print(f"New sensitivity: {SENSITIVITY}")
 def reset_sensitivity():
     '''Reset the mouse sensitivity to default.'''
+    # pylint: disable=global-statement
     global SENSITIVITY
     SENSITIVITY = 30
     print(f"Sensitivity reset: {SENSITIVITY}")
