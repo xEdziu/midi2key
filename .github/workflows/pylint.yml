@@ -39,3 +39,15 @@ jobs:
       with:
         name: pylint-score
         path: pylint_score.txt
+    - name: Commit pylint score
+      if: runner.os == 'Linux'
+      run: |
+        git config --local user.name 'GitHub Actions'
+        git config --local user.email 'action@github.com'
+        git add pylint_score.txt
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Add pylint score"
+          git push
+        fi
