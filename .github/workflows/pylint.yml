@@ -51,3 +51,5 @@ jobs:
           git commit -m "Add pylint score"
           git push
         fi
+      env:
+        GIT_HTTPS: https://x-access-token:${{ secrets.UPLOAD }}@
