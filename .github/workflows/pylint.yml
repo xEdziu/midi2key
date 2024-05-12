@@ -33,23 +33,8 @@ jobs:
       run: |
         pylint $(git ls-files '*.py') | tee pylint_output.txt
         grep 'rated at' pylint_output.txt | awk '{print $7}' > pylint_score.txt
-    - name: Upload pylint score
-      if: runner.os == 'Linux'
-      uses: actions/upload-artifact@v2
+    - uses: Silleellie/pylint-github-action@v2
       with:
-        name: pylint-score
-        path: pylint_score.txt
-    - name: Commit pylint score
-      if: runner.os == 'Linux'
-      run: |
-        git config --local user.name 'GitHub Actions'
-        git config --local user.email 'action@github.com'
-        git add pylint_score.txt
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Add pylint score"
-          git push
-        fi
-      env:
-        GIT_HTTPS: https://x-access-token:${{ secrets.UPLOAD }}@
+        lint-path: midi2key.py
+        python-version: 3.10
+        badge-text: PyLint Score
