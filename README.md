@@ -1,6 +1,6 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/xEdziu/midi2key/total)
 ![GitHub Tag](https://img.shields.io/github/v/tag/xEdziu/midi2key)
-![Workflow](https://github.com/xEdziu/midi2key/actions/workflows/pylint.yml/badge.svg)
+[![Workflows](https://github.com/xEdziu/midi2key/actions/workflows/pylint.yml/badge.svg?event=push)](https://github.com/xEdziu/midi2key/actions/workflows/pylint.yml)
 ![pylint](https://img.shields.io/badge/PyLint%20Score-10.00-brightgreen?logo=python&logoColor=white)
 
 
