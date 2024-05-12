@@ -1,3 +1,7 @@
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/xEdziu/midi2key/total)
+![GitHub Tag](https://img.shields.io/github/v/tag/xEdziu/midi2key)
+
+
 # MIDI to PC Keystrokes script
 
 > Can I play Muck on my yamaha keyboard? Let me check...
