@@ -1,4 +1,5 @@
 pylint
 mido
+python-rtmidi
 ctype
 argparse
