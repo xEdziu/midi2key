@@ -3,3 +3,4 @@ mido
 python-rtmidi
 ctype
 argparse
+PyYAML
